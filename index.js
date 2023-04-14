@@ -58,3 +58,26 @@ function titlecase() {
   let titlecaseString = titlecaseArray.join(" ");
   textarea.value = titlecaseString;
 }
+
+function updateCount() {
+  // update characters
+  let textarea = document.querySelector("textarea");
+  let characters = document.querySelector("#characters");
+
+  let totalCharacters = textarea.value.trim().length;
+  characters.innerText = totalCharacters;
+
+  // update words
+  let words = document.querySelector("#words");
+  let arrayOfWords = textarea.value.split(" ");
+  let sanitizedArray = [];
+
+  for (let word of arrayOfWords) {
+    if (word != "") {
+      sanitizedArray.push(word);
+    }
+  }
+
+  words.innerText = sanitizedArray.length;
+  console.log(sanitizedArray);
+}
