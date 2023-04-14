@@ -22,21 +22,27 @@
         </div>
 
         <div class="py-6 grow font-semibold text-gray-600">
-          <p class="">
-            Your long text goes here. Use the buttons at the bottom to alter
-            your text
-          </p>
+          <textarea
+            class="bg-[#D9D9D9]"
+            name="text"
+            cols="48"
+            rows="16"
+            placeholder=" Your long text goes here"
+          ></textarea>
         </div>
 
         <div class="py-4 flex justify-between items-center">
-          <button>
+          <button onclick="clean()">
             <i class="fa-solid fa-xmark text-3xl"></i>
           </button>
-          <button class="text-white bg-black px-6 h-7 text-sm rounded-md">
+          <button
+            class="text-white bg-black px-6 h-7 text-sm rounded-md"
+            onclick="whitespace()"
+          >
             remove white space
           </button>
 
-          <button>
+          <button onclick="copy()">
             <i class="fa-solid fa-copy text-2xl" style="color: #000000"></i>
           </button>
         </div>
@@ -55,11 +61,12 @@
         </div>
 
         <div class="flex justify-between h-16 font-semibold items-end">
-          <button type="submit">Titlecase</button>
-          <button type="submit">UPPERCASE</button>
-          <button type="submit">lowercase</button>
+          <button onclick="titlecase()">Titlecase</button>
+          <button onclick="uppercase()">UPPERCASE</button>
+          <button onclick="lowercase()">lowercase</button>
         </div>
       </footer>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

@@ -4,8 +4,7 @@
   "description": "Its going to be an amazing thing ...",
   "main": "index.js",
   "scripts": {
-    "vite": "vite --host",
-    "dev": "kjsljf"
+    "vite": "vite --host"
   },
   "author": "preeti",
   "license": "ISC",
