@@ -79,5 +79,4 @@ function updateCount() {
   }
 
   words.innerText = sanitizedArray.length;
-  console.log(sanitizedArray);
 }
